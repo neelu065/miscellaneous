@@ -1,0 +1,13 @@
+#!/bin/bash
+#testuser="raj neelu neelappagouda iist hpc jogendra"
+echo "files in desktop of $USER are:"
+think=/home/neelappagouda/Desktop/*
+for iter in $think 
+do
+if [ -d "$iter" ]; then
+echo "$iter is directory"
+else 
+echo "$iter is a file"
+fi
+done
+
